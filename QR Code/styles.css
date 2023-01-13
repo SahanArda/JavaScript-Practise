@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 :root {
     --grayish-blue: hsl(220, 15%, 55%);
     --light-gray: hsl(212, 45%, 89%);
-    --white: hsl(0, 0%, 100%);
+    --white: #ffff;
+    --blue: #89CFF0;
+    --font: 'Poppins', sans-serif;
 }
 
 * {
@@ -15,7 +19,8 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: var(--light-gray);
+    background-color: var(--blue);
+    font-family: var(--font);
 }
 
 .container {
@@ -24,6 +29,11 @@ body {
     max-width: 410px;
     border-radius: 10px;
     padding: 16px 25px;
+    transition: height 0.2s ease;
+}
+
+.container.active {
+    height: 530px;
 }
 
 .qr-code img{
@@ -32,6 +42,7 @@ body {
 
 header h1 {
     font-size: 21px;
+    font-weight: 500;
 }
 
 header p {
@@ -74,4 +85,10 @@ header p {
     padding: 33px 0;
     opacity: 0;
     pointer-events: none;
+}
+
+.container.active .qr-code {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
 }
