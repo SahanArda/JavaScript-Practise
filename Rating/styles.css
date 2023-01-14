@@ -21,9 +21,70 @@
 body {
     font-size: 15px;
     background-color: var(--very-dark-blue);
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+p {
+    line-height: 1.8;
+}
+
+ul li{
+    list-style: none;
 }
 
 .main-container,
 .thankyou-container {
-    background-color: var();
+    background-image: linear-gradient(
+    to bottom,
+    hsl(212, 18%, 14%),
+    hsl(220, 16%, 11%)
+  );
+  padding: 2rem;
+  border-radius: 25px;
+}
+
+.main-container img {
+    background-color: var(--medium-grey);
+    padding: 0.5rem;
+    border-radius: 50px;
+}
+
+.main-container h1 {
+    color: var(--white);
+    margin: 2rem 0 1rem;
+}
+
+.main-container p {
+    color: var(--medium-grey);
+    margin-bottom: 1rem;
+}
+
+.main-container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.main-container ul li button {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50px;
+    border: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.main-container ul li button:hover {
+    background-color: var(--medium-grey);
+}
+
+.main-container ul li button:focus {
+    background-color: var(--orange);
 }
