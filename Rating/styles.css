@@ -46,11 +46,12 @@ ul li{
   );
   padding: 2rem;
   border-radius: 25px;
+  width: 400px;
 }
 
 .main-container img {
     background-color: var(--medium-grey);
-    padding: 0.5rem;
+    padding: 0.9rem;
     border-radius: 50px;
 }
 
@@ -87,4 +88,27 @@ ul li{
 
 .main-container ul li button:focus {
     background-color: var(--orange);
+}
+
+.submit-btn {
+    background-color: var(--orange);
+    color: var(--white);
+    width: 100%;
+    padding: 0.8rem 0 0.6rem;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.thankyou-container img {
+    display: block;
+    margin: 0 auto 2rem;
 }
