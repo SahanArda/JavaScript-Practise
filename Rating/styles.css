@@ -148,3 +148,24 @@ ul li{
 .hidden {
     display: none;
 }
+
+@media screen and (max-width: 480px){
+    .main-container,
+    .thankyou-container {
+        scale: 0.8;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .main-container,
+    .thankyou-container {
+        scale: 0.7;
+    }
+}
+
+@media screen and (min-width: 1700px){
+    .main-container,
+    .thankyou-container {
+        scale: 2;
+    }
+}
