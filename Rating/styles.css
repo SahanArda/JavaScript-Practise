@@ -23,7 +23,6 @@
 body {
     font-size: 15px;
     background-color: var(--very-dark-blue);
-    margin: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,4 +143,8 @@ ul li{
 .thankyou-container p {
     color: var(--medium-grey);
     margin-bottom: 2rem;
+}
+
+.hidden {
+    display: none;
 }
