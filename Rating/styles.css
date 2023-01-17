@@ -7,6 +7,8 @@
     --medium-grey: #7c8798;
     --dark-blue: #252d37;
     --very-dark-blue: #121417;
+    --dark-grey: rgb(37, 45, 55);
+
 
     --font: 'Overpass', sans-serif;
 }
@@ -50,7 +52,7 @@ ul li{
 }
 
 .main-container img {
-    background-color: var(--medium-grey);
+    background-color: hsl(213, 19%, 18%);
     padding: 0.9rem;
     border-radius: 50px;
 }
@@ -80,14 +82,18 @@ ul li{
     border: none;
     transition: 0.3s ease;
     cursor: pointer;
+    background-color: hsl(213, 19%, 18%);
+    color: var(--light-grey);
 }
 
 .main-container ul li button:hover {
     background-color: var(--medium-grey);
+    color: var(--white);
 }
 
 .main-container ul li button:focus {
     background-color: var(--orange);
+    color: var(--white);
 }
 
 .submit-btn {
@@ -122,10 +128,20 @@ ul li{
 }
 
 .thankyou-container p.gray {
-    background-color: var(--white);
+    background-color: var(--dark-grey);
     color: var(--orange);
     border-radius: 30px;
     padding: 0.2rem 0.8rem 0;
     font-size: 0.85rem;
+    margin-bottom: 2rem;
+}
+
+.thankyou-container h1 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.thankyou-container p {
+    color: var(--medium-grey);
     margin-bottom: 2rem;
 }
