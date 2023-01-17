@@ -108,7 +108,24 @@ ul li{
     color: var(--orange);
 }
 
+.thankyou-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .thankyou-container img {
     display: block;
     margin: 0 auto 2rem;
+}
+
+.thankyou-container p.gray {
+    background-color: var(--white);
+    color: var(--orange);
+    border-radius: 30px;
+    padding: 0.2rem 0.8rem 0;
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
 }
