@@ -23,7 +23,6 @@
 body {
     font-size: 15px;
     background-color: var(--very-dark-blue);
-    margin: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,4 +143,29 @@ ul li{
 .thankyou-container p {
     color: var(--medium-grey);
     margin-bottom: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 480px){
+    .main-container,
+    .thankyou-container {
+        scale: 0.8;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .main-container,
+    .thankyou-container {
+        scale: 0.7;
+    }
+}
+
+@media screen and (min-width: 1700px){
+    .main-container,
+    .thankyou-container {
+        scale: 2;
+    }
 }
