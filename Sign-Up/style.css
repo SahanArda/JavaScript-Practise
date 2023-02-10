@@ -14,8 +14,17 @@
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     background-image: url(/Sign-Up/images/bg-intro-desktop.png);
     background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
 }
