@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #ff7978;
+    --secondary-color: #fff;
+    --trial-btn: #5d54a3;
+    --btn: hsl(154, 59%, 51%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-image: url(/Sign-Up/images/bg-intro-desktop.png);
+    background-color: var(--primary-color);
+}
